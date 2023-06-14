@@ -28,13 +28,6 @@
         font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,PingFang SC,Noto Sans,Noto Sans CJK SC,Microsoft YaHei,微软雅黑,sans-serif;
         -webkit-font-smoothing: antialiased;
       }
-      
-      .sec-block {
-        position: relative;
-        width: 100%;
-        height: 300px;
-        background: #f7f9fe;
-      }
       .df {
         display: flex;
       }
@@ -158,86 +151,88 @@
       }
     </style>
     <style>
-      .top-block {
+      .about-block {
         position: relative;
         width: 100%;
-        height: 300px;
         background: #ffffff;
-      }
-      .top-block .top-module {
-        position: absolute;
-        top: -50px;
-        left: 0px;
-        margin: 0px 80px;
-        height: 160px;
-        width: calc(100% - 160px);
-        background: #ffffff;
-        border-radius: 5px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-      }
-      .top-block .module-con {
-        padding: 24px;
-      }
-      .top-module .doc-con {
-        width: 400px;
-        border-right: 0.5px solid #7f7f8e;
-        /* border-image: linear-gradient(to bottom, transparent, #7f7f8e, transparent) 1; */
-        /* border-image-slice: 1; */
-        padding: 16px 16px 16px 0px;
-      }
-      .top-module .doc-title {
-        font-size: 30px;
-        font-weight: 700;
-      }
-      .top-module .doc-text,.top-module .tag-text {
-        margin-top: 16px;
-        color: #7f7f8e;
-        font-family: PingFangSC-Light;
-        font-size: 16px;
-        font-weight: 300;
-      }
-      .top-module .tag-con {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-      }
-      .top-module .tag-title {
-        font-size: 25px;
-        font-weight: 500;
-      }
-      .top-block .top-con {
-        padding-top: 150px;
         text-align: center;
       }
-      .top-block .title {
+      .about-block .top-con {
+        width: 787px;
+        margin: 100px auto;
+      }
+      .about-block .title {
         font-family: FZLTTHK--GBK1-0;
         height: 86px;
         line-height: 47px;
         font-size: 34px;
         font-weight: 700;
       }
-      .top-block .title-line {
+      .about-block .title-line {
         background: #01c2c3;
         height: 6px;
         width: 51px;
       }
-      .top-block .subtitle-wrap {
-        padding-top: 16px;
-      }
-      .top-block .line {
+      .about-block .line {
         transform: translateY(-2px);
         width: 16px;
         height: 0;
         border-top: 0.5px solid #7f7f8e;
       }
-      .top-block .subtitle {
-        margin: 0 8px;
-        color: #7f7f8e;
-        font-family: PingFangSC-Light;
+      .about-block .content {
+        margin-top: 80px;
+        color: #5a5f6d;
+        -webkit-letter-spacing: 2.11px;
+        -moz-letter-spacing: 2.11px;
+        -ms-letter-spacing: 2.11px;
+        letter-spacing: 2.11px;
+        line-height: 30px;
         font-size: 16px;
         font-weight: 300;
-        height: 22px;
-        text-align: center;
+        text-align: left;
+      }
+    </style>
+    <style>
+      .notice-block {
+        position: relative;
+        width: 100%;
+        background: #fbfbfb;
+      }
+      .notice-block .top-con {
+        width: 787px;
+        margin: 0px auto;
+        padding: 100px 0px;
+      }
+      .notice-block .title {
+        font-family: FZLTTHK--GBK1-0;
+        height: 86px;
+        line-height: 47px;
+        font-size: 34px;
+        font-weight: 700;
+      }
+      .notice-block .title-line {
+        background: #01c2c3;
+        height: 6px;
+        width: 51px;
+      }
+      .notice-block .line {
+        transform: translateY(-2px);
+        width: 16px;
+        height: 0;
+        border-top: 0.5px solid #7f7f8e;
+      }
+      .notice-block .content {
+        margin-top: 80px;
+        width: 100%;
+      }
+      .notice-block .qrcode {
+        width: 100%;
+        height: 156px;
+      }
+      .notice-block .img-doc {
+        margin-top: 28px;
+        font-size: 16px;
+        font-weight: 500;
       }
     </style>
     <style>
@@ -416,10 +411,10 @@
           放下束缚，追寻自由之旅！
         </div> -->
         <div class="header-right df aic">
-          <a href="/" class="link-active">
+          <a href="/" class="link">
             首页
           </a>
-          <a href="/about.html" class="link">
+          <a href="/about.html" class="link-active">
             关于我们
           </a>
         </div>
@@ -467,47 +462,65 @@
         </div>
       </div>
     </div>
-    <div class="block top-block">
-      <div class="top-module">
-        <div class="module-con df aic jcsb">
-          <div class="doc-con df dfc jcc">
-            <div class="doc-title">
-              探本旅行 - 年轻人的旅行理念
-            </div>
-            <div class="doc-text">
-              纵情天地 无拘无束 追求自由 远离束缚
-            </div>
-          </div>
-          <div class="df aic jcse f1">
-            <div class="tag-con">
-              <div class="tag-title">100%本地特色</div>
-              <div class="tag-text">体验原生的本地文化特色</div>
-            </div>
-            <div class="tag-con">
-              <div class="tag-title">100%纯玩</div>
-              <div class="tag-text">拒绝任何套路，纯粹游玩</div>
-            </div>
-            <div class="tag-con">
-              <div class="tag-title">100%年轻化</div>
-              <div class="tag-text">只接受20-35岁的年轻人</div>
-            </div>
-          </div>
-        </div>
-      </div>
+    <div class="block about-block">
       <div class="top-con df dfc aic jcc">
         <div class="title df dfc aic jcc">
-          潮流生活方式社区
+          关于我们
           <div class="title-line"></div>
         </div>
-        <div class="subtitle-wrap df aic">
-          <div class="line"></div>
-          <div class="subtitle">趣味相投，创造美好回忆</div>
-          <div class="line"></div>
+        <div class="content">
+          探本旅行是一个以探索本地文化和风土人情为主题的旅行社区。我们致力于带领旅行爱好者深入了解和体验目的地的本土文化，探索当地独特的风景、美食、传统手工艺和人文历史。
+          <br />
+          <br />
+          探本旅行的特色：
+          <br />
+          <br />
+          本地化导游：我们拥有经验丰富的本地导游，他们对目的地的历史、文化和风俗习惯非常了解，能够为旅行者提供深入的解说和导览服务。
+          <br />
+          <br />
+          独特路线：我们设计独特的旅行路线，将旅行者带到不常被游客发现的景点和地区，让他们领略到真正的本地风情和美景。
+          <br />
+          <br />
+          本地文化体验：除了观光景点，我们还安排旅行者参与各种本地文化体验活动，如传统手工艺制作、民俗表演、当地美食品尝等，让他们亲身感受当地生活和文化。
+          <br />
+          <br />
+          小团体旅行：我们倡导小团体旅行，每个团的规模较小，以便更好地照顾每位旅行者的需求，并提供更个性化的服务。
+          <br />
+          <br />
+          环境保护意识：我们注重环境保护，鼓励旅行者尊重自然环境和当地社区，遵守当地的文化和行为准则，共同保护目的地的可持续发展。
+          <br />
+          <br />
+          通过探本旅行，您可以享受到独特而深入的本地旅行体验，发现不一样的文化和美景，与当地人交流互动，留下难忘的旅行回忆。无论是短途周末游还是长途探险，探本旅行将带领您走进真正的本地世界。
         </div>
       </div>
     </div>
-    <div class="block sec-block">
-      <div>测试</div>
+    <div class="block notice-block">
+      <div class="top-con df dfc aic jcc">
+        <div class="title df dfc aic jcc">
+          关注我们
+          <div class="title-line"></div>
+        </div>
+        <div class="content df jcse">
+          <div class="df aic dfc">
+            <img src="./assets/qrcode-personal.jpg" alt="code" class="qrcode" />
+            <div class="img-doc">
+              微信号
+            </div>
+          </div>
+          <div class="df aic dfc">
+            <img src="./assets/qrcode-public.jpg" alt="code" class="qrcode" />
+            <div class="img-doc">
+              微信公众号
+            </div>
+          </div>
+          <div class="df aic dfc">
+            <img src="./assets/qrcode-xiaohongshu.jpg" alt="code" class="qrcode" />
+            <div class="img-doc">
+              小红书
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <footer class="block footer-block">
       <p>佛山市禅城区卓铭晨科技中心</p>
