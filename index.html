@@ -5,14 +5,14 @@
 		<meta name="viewport" content="minimum-scale=1, initial-scale=1, width=device-width, shrink-to-fit=no">
 		<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
 		<meta name="renderer" content="webkit" />
-		<meta name="keywords" content="POIZON,Poizon,fashionable,lifestyle" />
+		<meta name="keywords" content="探本,旅行,年轻人旅行,社交旅行,本地化旅行,旅游攻略,游玩攻略,周末游玩,周边游,Citywalk,社区旅行体验,探索本地景点,探索当地文化,独特旅行体验,城市探险活动,本地化探索,独特旅行体验,社区参与,个性化服务,上海旅游,本地特色,纯玩无购物,年轻化旅行" />
 		<meta
 			name="description"
-			content="探本旅行，专注于年轻人的旅行"
+			content="探本旅行，专注于年轻人的旅行。我们致力于带领旅行者深入了解和体验目的地的本土文化，探索当地独特的风景、美食、传统手工艺和人文历史。"
 		/>
 		<meta property="og:type" content="website">
 		<meta property="og:title" content="探本旅行" />
-		<meta property="og:description" content="探本旅行，专注于年轻人的旅行" />
+		<meta property="og:description" content="探本旅行，专注于年轻人的旅行。我们致力于带领旅行者深入了解和体验目的地的本土文化，探索当地独特的风景、美食、传统手工艺和人文历史。" />
 		<meta property="og:image" content="./assets/logo.png" />
 		<meta property="og:image:width" content="200" />
 		<meta property="og:image:height" content="128" />
@@ -57,8 +57,14 @@
       .jcsb {
         justify-content: space-between;
       }
-      .dfdc {
+      .jcse {
+        justify-content: space-evenly;
+      }
+      .dfc {
         flex-direction: column;
+      }
+      .f1 {
+        flex: 1;
       }
       .ml36 {
         margin-left: 36px;
@@ -75,6 +81,7 @@
         width: 100%;
       }
       .header-block-scrolled {
+        position: fixed;
         background-color: rgba(0, 0, 0, 1);
       }
       .logo {
@@ -172,11 +179,41 @@
         top: -50px;
         left: 0px;
         margin: 0px 80px;
-        height: 150px;
+        height: 160px;
         width: calc(100% - 160px);
         background: #ffffff;
         border-radius: 5px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      }
+      .top-block .module-con {
+        padding: 24px;
+      }
+      .top-module .doc-con {
+        width: 400px;
+        border-right: 0.5px solid #7f7f8e;
+        /* border-image: linear-gradient(to bottom, transparent, #7f7f8e, transparent) 1; */
+        /* border-image-slice: 1; */
+        padding: 16px 16px 16px 0px;
+      }
+      .top-module .doc-title {
+        font-size: 30px;
+        font-weight: 700;
+      }
+      .top-module .doc-text,.top-module .tag-text {
+        margin-top: 16px;
+        color: #7f7f8e;
+        font-family: PingFangSC-Light;
+        font-size: 16px;
+        font-weight: 300;
+      }
+      .top-module .tag-con {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .top-module .tag-title {
+        font-size: 25px;
+        font-weight: 500;
       }
       .top-block .top-con {
         padding-top: 150px;
@@ -370,7 +407,7 @@
     </style>
   </head>
   <body>
-    <div class="block header-block header-sticky">
+    <div class="block header-block">
       <div class="df aic jcsb">
         <img src="./assets/tanben.png" alt="logo" class="logo" />
         <!-- <div class="header-right">
@@ -390,9 +427,9 @@
       <div class="mask"></div>
       <div class="container">
         <section class="doc">
-          <div class="title">新一代潮流旅行社区</div>
-          <div class="subtitle">鉴别服务开创者 力保全新正品</div>
-          <div class="explain">正品保障 · 逐件查验 · 多重鉴别</div>
+          <div class="title">新一代旅行爱好者社区</div>
+          <div class="subtitle">社交旅行 专注于年轻人的旅行</div>
+          <div class="explain">100%本地特色 · 纯玩无购物 · 年轻化旅行</div>
           <section class="df aic qrcode-con">
             <div class="df aic">
               <img src="./assets/qrcode-personal.jpg" alt="code" class="qrcode" />
@@ -430,18 +467,39 @@
     </div>
     <div class="block top-block">
       <div class="top-module">
-        <div class="module-con">
-          测试123
+        <div class="module-con df aic jcsb">
+          <div class="doc-con df dfc jcc">
+            <div class="doc-title">
+              探本旅行 - 年轻人的旅行理念
+            </div>
+            <div class="doc-text">
+              纵情天地 无拘无束 追求自由 远离束缚
+            </div>
+          </div>
+          <div class="df aic jcse f1">
+            <div class="tag-con">
+              <div class="tag-title">100%本地特色</div>
+              <div class="tag-text">体验原生的本地文化特色</div>
+            </div>
+            <div class="tag-con">
+              <div class="tag-title">100%纯玩</div>
+              <div class="tag-text">拒绝任何套路，纯粹游玩</div>
+            </div>
+            <div class="tag-con">
+              <div class="tag-title">100%年轻化</div>
+              <div class="tag-text">只接受20-35岁的年轻人</div>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="top-con df dfdc aic jcc">
-        <div class="title df dfdc aic jcc">
+      <div class="top-con df dfc aic jcc">
+        <div class="title df dfc aic jcc">
           潮流生活方式社区
           <div class="title-line"></div>
         </div>
         <div class="subtitle-wrap df aic">
           <div class="line"></div>
-          <div class="subtitle">王思聪和IG队员力荐，众位明星潮人入驻</div>
+          <div class="subtitle">趣味相投，创造美好回忆</div>
           <div class="line"></div>
         </div>
       </div>
@@ -454,7 +512,7 @@
       <p>Zhuomingchen Technology Center in Chancheng District, Foshan City</p>
       <p>2022-2023 探本旅行版权所有</p>
     </footer>
-    <!-- <script>
+    <script>
       window.addEventListener('scroll', function() {
         var header = document.querySelector('.header-block');
         // console.log('header', header)
@@ -464,7 +522,7 @@
           header.classList.remove('header-block-scrolled');
         }
       });
-    </script> -->
+    </script>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-9H8KWXY0KS"></script>
     <script>
